@@ -1,0 +1,24 @@
+{
+  "name": "contatooh",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Wilmerson da Silva <wilmersondasilva@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-resource": "^1.5.8"
+  }
+}

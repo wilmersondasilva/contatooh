@@ -1,0 +1,37 @@
+<div class="jumbotron">
+	<h1 class="text-center">
+		Welcome to Contatooh
+	</h1>
+</div>
+
+<a class="btn btn-primary" ng-href="#/contact">
+	Add new contact
+</a>
+
+<input type="search" placeholder="search for contact" ng-model="filter">
+
+<p ng-show="contacts.length">Registered contacts: {{ contacts.length }}</p>
+<p class="text-info" ng-hide="contacts.length">No registered contacts</p>
+
+<div class="table-responsive">
+	<table class="table table-hover">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Emergency</th>
+			<th class="text-center">Action</th>
+		</tr>
+		<tr ng-repeat="contact in contacts | filter: filter">
+			<td>
+				<a ng-href="#/contact/{{ contact._id }}">{{ contact.name }}</a>
+			</td>
+			<td>{{ contact.email }}</td>
+			<td>{{ contact.emergency.name }}</td>
+			<td class="text-center">
+				<button class="btn btn-warning" ng-click="remove(contact)">
+					Remove
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>
