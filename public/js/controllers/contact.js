@@ -6,6 +6,8 @@
 
 
 	function ContactCtrl($scope, $routeParams, Contact) {
+		$scope.message = {};
+		
 		if ($routeParams.id) {
 			Contact.get(
 				{ id: $routeParams.id },
@@ -29,6 +31,7 @@
 			$scope.contact.$save()
 				.then(function() {
 					$scope.contact = new Contact();
+					$scope.message.text = 'Success';
 				});
 		}
 	}
