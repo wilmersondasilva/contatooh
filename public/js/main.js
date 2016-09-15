@@ -4,7 +4,9 @@
 		.module('contatooh', ['ngRoute', 'ngResource'])
 		.config(config);
 
-	function config($routeProvider) {
+	function config($routeProvider, $httpProvider) {
+
+		$httpProvider.interceptors.push('authInterceptor');
 		
 		$routeProvider
 			.when('/contacts', {
@@ -18,6 +20,9 @@
 			.when('/contact/', {
 				templateUrl: 'partials/contact.html',
 				controller: 'ContactCtrl'
+			})
+			.when('/auth', {
+				templateUrl: 'partials/auth.html'
 			})
 			.otherwise({redirectTo: '/contacts'});
 

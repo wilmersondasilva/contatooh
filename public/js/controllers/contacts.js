@@ -23,7 +23,7 @@
 					$scope.contacts = contacts;
 				},
 				function (error) {
-					console.log(erro);
+					console.log(error);
 					// message from user about error
 				}
 			)
