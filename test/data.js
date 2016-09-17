@@ -9,7 +9,7 @@ var contacts = [
 	{ name: 'xyz3', email: 'xyz3@email.com'}
 ];
 
-MongoClient.connect('mongodb://locahost:27017/contatooh_test', function(error, db) {
+MongoClient.connect('mongodb://localhost:27017/contatooh_test', function(error, db) {
 	if (error) throw error;
 
 	db.dropDatabase(function(err) {
