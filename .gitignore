@@ -1,2 +1,7 @@
-public/vendor
-node_modules
+public/vendor/
+node_modules/
+.tmp
+.DS_Store
+.DS_Store?
+dist/
+scripts/
