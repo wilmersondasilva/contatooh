@@ -5,7 +5,7 @@ exports.config = {
 	saucerKey: config.saucerKey,
 	capalities: {
 		'name': config.sauceTestName,
-		'browserName': 'firefox',
+		'browserName': 'chrome',
 		'tunnel-identifier': config.travisJobNumber,
 		'build': config.travisBuild
 	},
@@ -15,7 +15,7 @@ exports.config = {
 };
 
 function onPrepare() {
-	browser.driver.get('http://localhost:3000').then(function() {
+	browser.driver.get('http://localhost:3000/#/auth').then(function() {
 		browser.driver.findElement(by.id('enter')).click();
 		browser.driver.findElement(by.id('login_field')).sendKeys(config.seleniumUser);
 		browser.driver.findElement(by.id('password')).sendKeys(config.seleniumUserPassword);
