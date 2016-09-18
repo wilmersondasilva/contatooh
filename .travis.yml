@@ -22,6 +22,6 @@ services:
   - mongodb
 script:
   - karma start config/karma.config.js --single-run --browsers PhantomJS
-  - node server &
-  - webdriver-manager start &
-  - protractor config/protractor.js
+  #- node server &
+  #- webdriver-manager start &
+  #- protractor config/protractor.js
