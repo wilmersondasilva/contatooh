@@ -27,6 +27,6 @@ deploy:
   password:
     secure: mP/DKIIBcWWGvnIW5lrYubR4YmgeOpQZttzWm3UxcjcVntWcpGWg2E65inhO91yh22yxZkv/qjTS4ug6qiGZSDaXtcVm5bEiPaPHldYLpgKU9GdQa+kDWHhu0OY9ejBfx3MiBK8YmDZzOwBTIlCk+aH89tqGP/OfMFpePWype81dtsssV1JNDailmZhxMR4iuV2Os+z47jReHdgsxAod1QyafyEJ3WR5ZWXlKPMUK33UIQmI1VFakElLXIcZYvCsafP/8+MMOZ+cpDr7eaojdTte8hQlbjMl3jgZin4L/fqMa94g818zqIsDlK6fnms32mC/NPggqVvJm9N6reo+n2DHqnfZCQLOqngVt75eIfsiErfksgvO4EjZnIPJmZc8bDFMjRUUJZrHICjKQN2qOndL46i1PLYo1QNpkOqjj3bDt524mWvNT2dykfmV1M/M6ZkM6J8Yy49wc5qeTL9qnoQBkcWhnAaD/jdNjaXl/ZZlBN2a8yyTJ1GYeM0c+LjPVyVe+Swre5uI2GEGn96XKwwHREi/Lkbd02dP0fJDIXJZM9WEdGHCofGObbto6kaxRvOwox3DcWOHx0/LtVSlCv70YiGx55f/lt5+A1Wu7SbCoLODVmd8y7K8SUbupQGLy/tJoHTJzo8tJnr37p0Zo8afR5zJ5Qrkq3s8CaxZAc8=
   app: contatooh
-  domain: http://contatooh-finkers.rhcloud.com
+  domain: finkers
   on:
     repo: wilmersondasilva/contatooh
