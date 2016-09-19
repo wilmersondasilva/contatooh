@@ -10,7 +10,7 @@ module.exports = function() {
 	var gitHubConfig = {
 		clientID: config.clientID,
 		clientSecret: config.clientSecret,
-		callbackURL: 'http://localhost:3000/auth/github/callback'
+		callbackURL: 'http://' + config.domain + ':' + config.port + '/auth/github/callback'
 	}
 
 	function gitHubCallback (accessToken, refreshToken, profile, done) {
