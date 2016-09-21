@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
    
     usemin : {
-      html: 'app/views/**/*.ejs'
+      html: 'app/views/**/*.pug'
     },
 
     useminPrepare: { 
@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         root: 'public',
         dest: 'public'
       },
-      html: 'app/views/**/*.ejs'
+      html: 'app/views/**/*.pug'
     }, 
 
     ngAnnotate: {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('minifica', ['useminPrepare', 'ngAnnotate', 'concat', 
+  grunt.registerTask('minify', ['useminPrepare', 'ngAnnotate', 'concat', 
   'uglify', 'cssmin', 'usemin']);
   
   grunt.loadNpmTasks('grunt-contrib-concat');
