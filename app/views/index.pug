@@ -3,8 +3,10 @@ html(ng-app="contatooh")
 	head
 		meta(charset="utf-8")
 		title Welcome
+		// build:css css/index.min.css
 		link(rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.css")
 		link(rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap-theme.css")
+		// endbuild
 
 	body.container
 		if userLogin
@@ -15,9 +17,8 @@ html(ng-app="contatooh")
 				
 		
 		div(ng-view)
-
-		script(src='teste.js')
-
+		
+		// build:js js/index.min.js
 		script(src="vendor/angular/angular.js")
 		script(src="vendor/angular-route/angular-route.js")
 		script(src="vendor/angular-resource/angular-resource.js")
@@ -28,4 +29,4 @@ html(ng-app="contatooh")
 		
 		script(src="js/controllers/contacts.js")
 		script(src="js/controllers/contact.js")
-
+		// endbuild

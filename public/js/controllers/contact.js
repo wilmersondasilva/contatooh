@@ -35,6 +35,7 @@
 				});
 		}
 	}
+	ContactCtrl.$inject = ["$scope", "$routeParams", "Contact"];
 
 })();
 

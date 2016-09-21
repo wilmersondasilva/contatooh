@@ -28,4 +28,5 @@
 
 
 	}
+	config.$inject = ["$routeProvider", "$httpProvider"];
 })();

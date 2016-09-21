@@ -29,6 +29,7 @@
 			)
 		}
 	}
+	ContactsCtrl.$inject = ["$scope", "Contact"];
 
 })();
 

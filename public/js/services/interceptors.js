@@ -16,6 +16,7 @@
 
 		return interceptor;
 	}
+	authInterceptor.$inject = ["$location", "$q"];
 
 })();
 

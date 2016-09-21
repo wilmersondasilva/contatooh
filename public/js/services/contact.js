@@ -7,6 +7,7 @@
 	function Contact($resource) {
 		return $resource('/contacts/:id');
 	}
+	Contact.$inject = ["$resource"];
 
 })();
 
