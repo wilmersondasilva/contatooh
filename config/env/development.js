@@ -7,5 +7,5 @@ module.exports = {
 	seleniumUserPassword: process.env.SELENIUM_USER_PASSWORD,
 	port: 3000,	
 	address: 'localhost',
-	domain: 'localhost',
+	domain: 'localhost:3000',
 };
